@@ -15,22 +15,42 @@
 
         L_Brace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <4 5>;
+            key-positions = <4 3>;
         };
 
         L_Brackets {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <16 17>;
+            key-positions = <16 15>;
         };
 
         L_Parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <28 29>;
+            key-positions = <28 27>;
         };
 
         L_Less {
             bindings = <&kp LESS_THAN>;
-            key-positions = <5 4>;
+            key-positions = <29 28>;
+        };
+
+        R_Brace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <7 8>;
+        };
+
+        R_Brackets {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <20 19>;
+        };
+
+        new_combo {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <32 31>;
+        };
+
+        new_combo {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <30 31>;
         };
     };
 
@@ -45,10 +65,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-   &kp TAB  &kp Q  &kp W         &kp E        &kp R        &kp T        &kp Y      &kp U      &kp I    &kp O     &kp P         &kp PIPE
-&kp LSHIFT  &kp A  &kp S         &kp D        &kp F        &kp G        &kp H      &kp J      &kp K    &kp L  &kp SEMI  &mt RSHIFT APOS
- &kp RCTRL  &kp Z  &kp X         &kp C        &kp V        &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH      &lt 3 TILDE
-                          &kp LEFT_ALT  &lt 1 SPACE  &lt 2 EQUAL  &lt 2 ENTER  &lt 1 DEL   &kp LGUI
+   &kp TAB  &kp Q  &kp W         &kp E        &kp R        &kp T        &kp Y            &kp U      &kp I    &kp O     &kp P    &kp BACKSLASH
+&kp LSHIFT  &kp A  &kp S         &kp D        &kp F        &kp G        &kp H            &kp J      &kp K    &kp L  &kp SEMI  &mt RSHIFT APOS
+ &kp RCTRL  &kp Z  &kp X         &kp C        &kp V        &kp B        &kp N            &kp M  &kp COMMA  &kp DOT  &kp FSLH      &lt 3 GRAVE
+                          &kp LEFT_ALT  &lt 1 SPACE  &lt 2 EQUAL  &lt 1 ENTER  &lt 2 BACKSPACE   &kp LGUI
             >;
         };
 
@@ -61,9 +81,9 @@
 
             bindings = <
 &kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6    &kp N7          &kp N8     &kp N9  &kp N0  &kp BACKSLASH
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOWN          &kp UP  &kp RIGHT  &trans         &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT          &kp UP  &kp RIGHT  &trans         &trans
  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp DOWN_ARROW     &trans  &trans         &trans
-                         &trans  &trans  &trans  &trans    &trans          &trans
+                         &trans  &trans  &trans  &trans   &kp DEL          &trans
             >;
         };
 
