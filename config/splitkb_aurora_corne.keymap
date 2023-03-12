@@ -45,12 +45,12 @@
             key-positions = <20 19>;
         };
 
-        new_combo {
+        R_Parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <32 31>;
         };
 
-        new_combo {
+        R_Great {
             bindings = <&kp GREATER_THAN>;
             key-positions = <30 31>;
         };
