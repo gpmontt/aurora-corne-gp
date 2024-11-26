@@ -13,8 +13,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-
-     macros {
+    macros {
         lower_layer: lower_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -22,7 +21,7 @@
                 <&macro_press>,
                 <&mo 1>,
                 <&macro_tap>,
-                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,8)>,
+                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(129,68,49)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 1>,
@@ -39,7 +38,7 @@
                 <&macro_press>,
                 <&mo 2>,
                 <&macro_tap>,
-                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,71,8)>,
+                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(300,51,43)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 2>,
@@ -157,10 +156,10 @@
 
         config {
             bindings = <
-&trans             &trans          &trans      &trans  &out OUT_TOG     &studio_unlock     &studio_unlock  &kp F12            &kp F7           &kp F8  &kp F9  &trans
-&bt BT_CLR         &bt BT_PRV      &bt BT_NXT  &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF    &trans          &kp F11            &kp F4           &kp F5  &kp F6  &trans
-&ext_power EP_TOG  &trans          &trans      &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &trans          &kp F10            &kp F1           &kp F2  &kp F3  &trans
-                                               &trans  &trans           &trans             &trans          &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
+&trans             &trans      &trans      &trans  &out OUT_TOG     &studio_unlock     &studio_unlock  &kp F12            &kp F7           &kp F8  &kp F9  &trans
+&bt BT_CLR         &bt BT_PRV  &bt BT_NXT  &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF    &trans          &kp F11            &kp F4           &kp F5  &kp F6  &trans
+&ext_power EP_TOG  &trans      &trans      &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &trans          &kp F10            &kp F1           &kp F2  &kp F3  &trans
+                                           &trans  &trans           &trans             &trans          &kp C_VOLUME_DOWN  &kp C_VOLUME_UP
             >;
         };
     };
