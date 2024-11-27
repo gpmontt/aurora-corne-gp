@@ -19,12 +19,12 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 1>,
+                <&lt 1 SPACE>,
                 <&macro_tap>,
-                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(129,68,49)>,
+                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,100,49)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 1>,
+                <&lt 1 SPACE>,
                 <&macro_tap>,
                 <&rgb_ug RGB_OFF>;
 
